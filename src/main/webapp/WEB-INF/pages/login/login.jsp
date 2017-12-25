@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../base.jsp"%>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +19,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="${ctx}/staticfile/img/favicon.png">
 
-    <title>Budding登录页面</title>
+    <title>Bidding登录页面</title>
 
     <!-- Bootstrap CSS -->
     <link href="${ctx}/staticfile/css/bootstrap.min.css" rel="stylesheet">

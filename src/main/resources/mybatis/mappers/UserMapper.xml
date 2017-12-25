@@ -5,21 +5,38 @@
  <!--保证接口和映射文件一一对应  -->
 <mapper namespace="bs.qch.budding.mapper.UserMapper">
 
+	<!-- 注册用户 -->
     <insert id="saveUser">
-        insert into user(username, password, status)
+        insert into bidd_user(user_id, username, password, role)
         values(
+        #{userId},
         #{username},
         #{password},
-        #{status}
+        #{role}
         )
     </insert>
 
-    <select id="findUser" resultType="string">
-        select user_id from user where username=#{username} and password=#{password}
+	<!-- 登录用户 -->
+    <select id="finUserByUPR" resultType="string">
+        select role from bidd_user where username=#{username} and password=#{md5Password}
 
     </select>
 
+	<!-- 校验用户名 -->
     <select id="queryUserByUsername" resultType="string">
-        select user_id from user where username=#{username}
+        select user_id from bidd_user where username=#{username}
     </select>
+    
+    <!-- 完善公司详细信息 -->
+    <insert id="saveUserDesc">
+    	insert into bidd_user_desc(user_id, realname, nickname, email, telphone, address)
+    	values(
+    		#{userId},
+    		#{realname},
+    		#{nickname},
+    		#{email},
+    		#{telphone},
+    		#{address}
+    	)
+    </insert>
 </mapper>

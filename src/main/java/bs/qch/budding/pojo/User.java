@@ -2,40 +2,41 @@ package bs.qch.budding.pojo;
 
 public class User {
 
-    private String userId;      // ç”¨æˆ·çš„id
-    private String username;    // ç”¨æˆ·å
-    private String password;    // ç”¨æˆ·å¯†ç 
-    private String status;     //  1 -- æ‹›æ ‡å•ä½  0-- æŠ•æ ‡å•ä½
+	private String userId; // ÓÃ»§id
+	private String username; // ÓÃ»§Ãû
+	private String password; // ÓÃ»§ÃÜÂë
+	private Integer role; // 1.´ú±íÕĞ±ê·½£¬ 0´ú±íÍ¶±ê·½
 
-    public String getUserId() {
-        return userId;
-    }
+	public String getUserId() {
+		return userId;
+	}
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public String getStatus() {
-        return status;
-    }
+	public Integer getRole() {
+		return role;
+	}
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
+	public void setRole(Integer role) {
+		this.role = role;
+	}
+
 }
