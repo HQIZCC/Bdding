@@ -125,16 +125,11 @@
                         <span>发布招标信息</span>
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
-                    <ul class="sub">
-                        <li><a class="" href="general.html">Elements</a></li>
-                        <li><a class="" href="buttons.html">Buttons</a></li>
-                        <li><a class="" href="grids.html">Grids</a></li>
-                    </ul>
                 </li>
                 <li>
-                    <a class="" href="widgets.html">
+                    <a class="" href="${ctx}/bidd/toSubmitBidd.action">
                         <i class="icon_genius"></i>
-                        <span>Widgets</span>
+                        <span>提交竞标信息</span>
                     </a>
                 </li>
                 <li>
